@@ -2,7 +2,11 @@
 Spring Boot Application using Lettuce to create a pubsub channel
 
 ## Running
-`mvn package spring-boot:run`
+- Start the redis server on a container (Dcoker) with docker-compose
+`docker-compose up -d`
+
+- Install and start the Spring Boot Application
+`mvn clean install spring-boot:run`
 
 ## Testing
 All methods are GETs so you can use the browser.
